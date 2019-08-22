@@ -27,6 +27,9 @@ defmodule ElixirTwitterWeb do
     end
   end
 
+  @spec view ::
+          {:__block__, [],
+           [{:alias, [...], [...]} | {:import, [...], [...]} | {:use, [...], [...]}, ...]}
   def view do
     quote do
       use Phoenix.View,
